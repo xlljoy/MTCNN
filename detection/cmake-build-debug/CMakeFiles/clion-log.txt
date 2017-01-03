@@ -1,0 +1,17 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/lixile/Documents/Programming/MTCNN/detection
+-- Configuring done
+CMake Warning at CMakeLists.txt:15 (add_executable):
+  Cannot generate a safe runtime search path for target MTCNN because there
+  is a cycle in the constraint graph:
+
+    dir 0 is [/Users/lixile/Documents/caffe/cmake_build/lib]
+    dir 1 is [/usr/local/lib]
+      dir 2 must precede it due to runtime library [libpython2.7.dylib]
+    dir 2 is [/Library/anaconda/lib]
+      dir 1 must precede it due to runtime library [libz.dylib]
+
+  Some of these libraries may not be found correctly.
+
+
+-- Generating done
+-- Build files have been written to: /Users/lixile/Documents/Programming/MTCNN/detection/cmake-build-debug
